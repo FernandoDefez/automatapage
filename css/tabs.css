@@ -125,14 +125,18 @@
     }
     
     #modal-content header span{
-        width: 10%;
+        width: 15%;
     }
 }
 
 @media screen and (max-width: 650px){
     
     #modal-content .button button{
-        width: 12%;
-        margin-left: 86%;
+        width: 20%;
+        margin-left: 78%;
+    }
+
+    #modal-content header h2{
+        font-size: 20px;
     }
 }
