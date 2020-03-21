@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/form.css">
-
 
     <link rel="shortcut icon" href="svgs/nodes.svg" type="image/x-icon">
     
@@ -40,22 +38,25 @@
 
         <!-- ABOUT ME -->
         <div class="box">
-        <!-- TITLE -->
-        <div class="title" id="About">  <h1> Who Am I? </h1>    </div>
-        <!-- CARD -->
-        <div class="col-cards">
-            <div class="card" id="card">
-                <div class="card-body">
-                    <div class="img">
-                        <img src="svgs/me.svg" alt="" width="100%">
+            <!-- TITLE -->
+            <div class="title" id="About">  <h1> Who Am I? </h1>    </div>
+            <!-- CARD -->
+            <div class="col-cards">
+
+                <div class="card" id="card">
+                    <div class="card-body">
+                        <div class="img">
+                            <img src="svgs/me.svg" alt="" width="100%">
+                        </div>
+                    </div> 
+                    <div class="card-text">
+                        <h2> Fernando Defez</h2>
+                        <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carrer</p>
                     </div>
-                </div> 
-                <div class="card-text">
-                    <h2> Fernando Defez</h2>
-                    <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carrer</p>
                 </div>
+
             </div>
-        </div>
+
         </div>
         <!-- ABOUT ME END-->
 
@@ -72,14 +73,14 @@
             <button onclick="openCity('Tokyo')">Tokyo</button>
             </div>
 
-            <div id="London" class="city" style="display:none">
+            <div id="London" class="tab" style="display:none">
                 <div class="content"> 
                     <h5>London</h5>
                 </div>
             </div>
 
 
-            <div id="Paris" class="city" style="display:none">
+            <div id="Paris" class="tab" style="display:none">
                 <div class="content">
                     <h5>Paris</h5>
                     <img onclick="document.getElementById('modal').style.display='block';  
@@ -91,7 +92,7 @@
 
 
 
-            <div id="Tokyo" class="city" style="display:none">
+            <div id="Tokyo" class="tab" style="display:none">
                 <div class="content">
                     <h5>Tokyo</h5>
                 </div>
@@ -115,22 +116,9 @@
         </div>
         <!-- MODAL END -->
 
-        <!-- EMAIL -->
-        <div class="box" style="border: none;">
-        <!-- IMAGE-->
-        <div class="title" id="Email"><h1 style="max-width: 220px; margin-top: 40px;"> Send an Email </h1></div>
-        <!-- SEND EMAIL -->
-        <div class="message">
-            <form action="" id="email-form">
-                <div class="evelope"><img src="svgs/email.svg" alt=""></div>
-                <div class="email"><input type="text"  placeholder="Enter Email" required></div>
-                <div class="email"><textarea placeholder="Enter Message"></textarea></div>
-                <div class="button"><button> Send </button></div>
-            </form>
-        </div>
-        </div>
-        <!-- EMAIL END -->
-
+        <footer style="max-width: 100%; background: sandybrown;">
+            sadas
+        </footer>
     </main>
 
     <script src="jquery/jquery-3.4.1.js"></script>
