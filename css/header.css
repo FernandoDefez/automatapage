@@ -13,6 +13,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .box{
@@ -39,7 +40,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     line-height: 40px;
-    color:  #F50057;
+    color:  #232a34;
     box-sizing: border-box;
 }
 
@@ -49,10 +50,16 @@ body{
     animation: leftAnimation 1.5s ease-in-out;
 }
 
+.banner .carousel h1{
+    max-width: 100%;
+    position: relative;
+    animation: rightAnimation 1.5s ease-in-out;
+}
+
 .banner .texts{
     font-size: 25px;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     padding: 0px 20%;
     text-align: center;
     border-bottom: 1.5px solid #bbb;
@@ -78,10 +85,11 @@ body{
     color: steelblue;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 900px){
     .banner .carousel{
-        max-width: 100%;
+        max-width: 70%;
         padding: 15px 5px;
+        margin: auto;
         box-sizing: border-box;
     }
     
@@ -107,14 +115,14 @@ body{
     }
 
     .links a{
-        margin: 0px 10px;
+        margin: 0px 0px;
         border-bottom: 1.4px solid #ccc;
         padding: 15px;
     }
     
     .links a:hover{
-        color:  #F50057;
-        border-bottom: 1.5px solid #F50057;
+        color:  #232a34;
+        border-bottom: 1.5px solid #232a34;
     }
 }
 

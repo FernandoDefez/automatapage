@@ -1,37 +1,36 @@
-#tab-buttons{
-    background: #eee;
+.tab-buttons{
+    background: #ddd;
     border: 1px solid #bbb;
-    margin: 40px 0px 0px 0px;
-}
-
-#tab-buttons button{
-    background: #eee;
-    color: steelblue;
-    border: none;
-    border-right:  1px solid #bbb;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    border-radius: 0%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0 20px;
     cursor: pointer;
+    width: 100%;
 }
 
-#tab-buttons button:focus{
-    outline: none;
-    background:  #fff;
+.tab-buttons p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
     color: steelblue;
 }
+
+.tab-buttons:hover{background: #eee;}
+
+.tab{background: deeppink !important;}
 
 .works{
-    background:  #fff;
+    background:  #eee;
     border: 1px solid #bbb;
     border-top: none;
-    margin-bottom: 40px;
 }
 
 .content{
     width: 100%;
-    padding: 10px 30px;
+    padding: 20px 30px;
     margin: auto;
 }
 
@@ -40,10 +39,10 @@
     font-weight: 300;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
     color: steelblue;
-    border-bottom: 2px solid steelblue;
+    border-bottom: 1px solid steelblue;
     display: inline-block;
     padding: 2px 0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #modal{
@@ -54,16 +53,33 @@
     width: 100%;
     height: 100%;
     position: fixed;
+    
 }
 
 #modal-content{
     max-width: 60%;
     margin: 55px auto;
-    background: #1a1a1a;
+    background: #232a34;
+    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal-image{
+    width: 100%;
+    height: 450px;
+    background: #232a34;
+}
+
+#modal-image img{
+    width: 100%;
+    height: 450px;
 }
 
 #modal-content .button{
-    max-width: 100%;
+    width: 100%;
+    background-color: #232a34;
 }
 
 #modal-content .button button:focus{
@@ -84,9 +100,10 @@
 }
 
 #modal-content header{
-    max-width: 100%;
+    width: 100%;
     max-height: 100px;
     display: flex;
+    justify-content: space-between;
 }
 
 #modal-content header h2{

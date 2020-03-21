@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/projects.css">   
 
     <link rel="shortcut icon" href="svgs/nodes.svg" type="image/x-icon">
     
@@ -19,11 +20,11 @@
     <div class="box">
         <div class="banner">
             <div class="carousel">
-                <img src="svgs/nodes.svg" alt="">
+                <img src="svgs/nodes.svg">
                 <h1>A U T Ó M A T A S</h1>
             </div>
             <div class="texts">
-                <p>Responsive, sortable, filterable and draggable grid layouts</p>
+                <p>Technological Institute of Cancun</p>
                 <div class="links">
                     <a href="#Homeworks"> Homeworks </a>
                     <a href="#Projects"> Projects </a>
@@ -51,7 +52,7 @@
                     </div> 
                     <div class="card-text">
                         <h2> Fernando Defez</h2>
-                        <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carrer</p>
+                        <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carreer</p>
                     </div>
                 </div>
 
@@ -63,41 +64,45 @@
         <!-- CONTENT -->
         <div class="box" style="border-bottom: none;">
         <!-- TITLE -->
-        <div class="title" id="Homeworks"> 
-            <h1 style="max-width: 190px;">Homeworks</h1> 
-        </div>
+            <div class="title" id="Homeworks"> <h1 style="max-width: 190px;">Homeworks</h1> </div>
 
 
         <!-- TAB-->
-        <div class="tab">
-            <div id="tab-buttons">
-                <button onclick="openCity('London')">1st Month</button>
-                <button onclick="openCity('Paris')">2nd Month</button>
-            </div>
-
-            <div id="London" class="works" style="display:none">
-                <div class="content"> 
-                <h5>London</h5>
+            <div class="tab">
+                <div class="tab-buttons" id="1stMonthBtn">
+                    <p>1st Month</p>
+                    <p>+</p>
                 </div>
+                    <div id="1stMonth" class="works" style="display: none;">
+                        <div class="content">
+                        <h5>Fisrt Month</h5>
+                            <img onclick="document.getElementById('modal').style.display='block';  
+                            document.getElementById('modal-image') .innerHTML='<img src='+'svgs/computer.svg'+' width=100%>';" 
+                            src="svgs/computer.svg"width="100%">
+                        </div>
+                    </div>
             </div>
-
-            <div id="Paris" class="works" style="display:none">
-                <div class="content">
-                <h5>Paris</h5>
-                <img onclick="document.getElementById('modal').style.display='block';  
-                document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
-                src="Proyectos/Pulsos/Pulsos.png"
-                width="100%">
+            
+            <div class="tab">
+                <div class="tab-buttons" id="2ndMonthBtn">
+                    <p>2nd Month</p>
+                    <p>+</p>
                 </div>
+                    <div id="2ndMonth" class="works" style="display: none;">
+                        <div class="content">
+                        <h5>Second Month</h5>
+                        <img onclick="document.getElementById('modal').style.display='block';  
+                        document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
+                        src="Proyectos/Pulsos/Pulsos.png"width="100%">
+                        </div>
+                    </div>
             </div>
-
-        </div>
         <!-- TAB END-->
-        </div>
+    </div>
         <!-- CONTENT END-->
 
         <!-- MODAL -->
-        <div id="modal" style="display: none;">
+        <div id="modal" style="display: none;" onclick="document.getElementById('modal').style.display='none'">
         <div id="modal-content">
             <header> <h2>Header</h2> <span onclick="document.getElementById('modal').style.display='none'">&times;</span> </header>
             <div id="modal-image">
@@ -109,6 +114,51 @@
         </div>
         </div>
         <!-- MODAL END -->
+
+
+
+    <div class="box">
+        <div class="title" id="Projects" style="margin-top: 50px;"> <h1 style="max-width: 130px;">Projects</h1> </div>
+
+        <div class="projects">
+            <div class="project-title tab-buttons">
+                <p> Pulso </p>
+            </div>
+            <div class="project-col">
+                <div class="project-img">
+                    <img onclick="document.getElementById('modal').style.display='block';  
+                    document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
+                    src="Proyectos/Pulsos/Pulsos.png"width="100%">
+                </div>
+                <div class="project-title tab-buttons">
+                    <p> Code </p>
+                </div>
+            </div>
+            <div class="project-col">
+                <div class="project-img">
+                    <img onclick="document.getElementById('modal').style.display='block';  
+                    document.getElementById('modal-image') .innerHTML='<img src='+'svgs/nodes.svg'+' width=100%>';" 
+                    src="svgs/nodes.svg"width="100%">
+                </div>
+                <div class="project-title tab-buttons">
+                    <p> Software </p>
+                </div>
+            </div>
+            <div class="project-col">
+                <div class="project-img">
+                    <img onclick="document.getElementById('modal').style.display='block';  
+                    document.getElementById('modal-image') .innerHTML='<img src='+'svgs/computer.svg'+' width=100%>';" 
+                    src="svgs/computer.svg"width="100%">
+                </div>
+                <div class="project-title tab-buttons">
+                    <p> Hardware </p>
+                </div>
+            </div>
+            <div class="project-title tab-buttons">
+                <p style="color: black !important;"> Herramientas Empleadas </p>
+            </div>
+        </div>
+    </div>
 
     </main>
 
