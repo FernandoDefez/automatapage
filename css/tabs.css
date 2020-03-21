@@ -46,7 +46,7 @@
 }
 
 #modal{
-    background: rgba(39, 39, 39, 0.424);
+    background: rgba(39, 39, 39, 0.4);
     top: 0%;
     left: 0%;
     z-index: 10;
@@ -57,7 +57,9 @@
 }
 
 #modal-content{
+    background: deeppink;
     max-width: 60%;
+    z-index: 100;
     margin: 55px auto;
     background: #232a34;
     height: 450px;
@@ -147,6 +149,17 @@
 }
 
 @media screen and (max-width: 650px){
+    #modal-content{
+        height: 350px;
+    }
+
+    #modal-image{
+        height: 350px;
+    }
+    
+    #modal-image img{
+        height: 350px;
+    }
     
     #modal-content .button button{
         width: 20%;
