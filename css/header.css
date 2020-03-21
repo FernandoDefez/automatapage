@@ -86,7 +86,7 @@ body{
     }
     
     .banner .carousel h1{
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .banner .texts{
@@ -96,7 +96,6 @@ body{
     }
     
     .banner p{
-        background: darksalmon;
         margin-bottom: 60px;
     }
 
