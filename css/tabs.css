@@ -1,18 +1,19 @@
 #tab-buttons{
     background: #eee;
     border: 1px solid #bbb;
-    margin: 40px 0px 40px 0px;
-    background: deeppink;
+    margin: 40px 0px 0px 0px;
 }
 
 #tab-buttons button{
     background: #eee;
     color: steelblue;
     border: none;
+    border-right:  1px solid #bbb;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     border-radius: 0%;
+    cursor: pointer;
 }
 
 #tab-buttons button:focus{
@@ -21,7 +22,7 @@
     color: steelblue;
 }
 
-.tab{
+.works{
     background:  #fff;
     border: 1px solid #bbb;
     border-top: none;
@@ -36,8 +37,8 @@
 
 .content h5{
     font-size: 20px;
-    font-weight: 200;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
     color: steelblue;
     border-bottom: 2px solid steelblue;
     display: inline-block;
@@ -56,12 +57,12 @@
 }
 
 #modal-content{
-    max-width: 870px;
-    margin: 48px auto;
-    background: white;
+    max-width: 60%;
+    margin: 55px auto;
+    background: #1a1a1a;
 }
+
 #modal-content .button{
-    margin: 6px 0;
     max-width: 100%;
 }
 
@@ -70,49 +71,68 @@
 }
 
 #modal-content .button button{
-    background: #efefef !important;
-    color: #8a8a8a !important;
-    font-size: 15px;
-    border-radius: 3px;
-    max-width: 10%;
+    background: #efefef;
+    color: #8a8a8a;
+    font-size: 16px;
+    width: 9%;
+    margin: 4px auto;
+    border-radius: 5px;
     border: 1px solid #8a8a8a;
     cursor: pointer;
-    float: right;
+    padding: 4px;
+    margin-left: 90%;
 }
 
 #modal-content header{
-    width: 100%;
+    max-width: 100%;
+    max-height: 100px;
     display: flex;
 }
 
 #modal-content header h2{
+    max-height: 100px;
     width: 95%;
-    font-size: 18px;
-    padding: 5px;
+    font-size: 24px;
+    padding: 5px 10px;
+    color: white;
 }
 
 #modal-content header span{
+    max-height: 100px;
     cursor: pointer;
     width: 5%;
-    background:  #F50057;
+    background: steelblue;
     color:white;
     text-align: center;
-    padding: 0;
-    font-size: 22px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
-#modal-content .modal-image{
-    padding: 5px;
-}
 
 @media screen and (max-width: 850px){
     .content{
         padding: 10px 10px;
     }   
     #modal-content{
-        max-width: 550px;
-        margin: 100px auto;
+        max-width: 100%;
+        margin: 50px 20px !important;
+    }
+
+    #modal-content header h2{
+        width: 90%;
+    }
+    
+    #modal-content header span{
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    
+    #modal-content .button button{
+        width: 12%;
+        margin-left: 86%;
     }
 }

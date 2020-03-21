@@ -14,9 +14,9 @@ window.addEventListener("scroll",  function () {
 function openCity(cityName){
     var i;
     var tab = document.getElementById("tab-buttons");
-    var x = document.getElementsByClassName("city"); //Devuelve todos los elementos con la clase city en este caso son 3, los oculta todos
+    var x = document.getElementsByClassName("works"); //Devuelve todos los elementos con la clase city en este caso son 3, los oculta todos
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+        x[i].style.display = "none";
     }
     document.getElementById(cityName).style.display = "block"; //Accedo al elemento con la id del nombre del parámetro para mostrarlo
     tab.style.borderBottom = "none";

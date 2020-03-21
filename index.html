@@ -63,40 +63,34 @@
         <!-- CONTENT -->
         <div class="box" style="border-bottom: none;">
         <!-- TITLE -->
-        <div class="title" id="Homeworks"> <h1 style="max-width: 190px;">Homeworks</h1> </div>
+        <div class="title" id="Homeworks"> 
+            <h1 style="max-width: 190px;">Homeworks</h1> 
+        </div>
+
 
         <!-- TAB-->
         <div class="tab">
             <div id="tab-buttons">
-            <button onclick="openCity('London')">London</button>
-            <button onclick="openCity('Paris')">Paris</button>
-            <button onclick="openCity('Tokyo')">Tokyo</button>
+                <button onclick="openCity('London')">1st Month</button>
+                <button onclick="openCity('Paris')">2nd Month</button>
             </div>
 
-            <div id="London" class="tab" style="display:none">
+            <div id="London" class="works" style="display:none">
                 <div class="content"> 
-                    <h5>London</h5>
+                <h5>London</h5>
                 </div>
             </div>
 
-
-            <div id="Paris" class="tab" style="display:none">
+            <div id="Paris" class="works" style="display:none">
                 <div class="content">
-                    <h5>Paris</h5>
-                    <img onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
-                    src="Proyectos/Pulsos/Pulsos.png"
-                    width="100%">
+                <h5>Paris</h5>
+                <img onclick="document.getElementById('modal').style.display='block';  
+                document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
+                src="Proyectos/Pulsos/Pulsos.png"
+                width="100%">
                 </div>
             </div>
 
-
-
-            <div id="Tokyo" class="tab" style="display:none">
-                <div class="content">
-                    <h5>Tokyo</h5>
-                </div>
-            </div>
         </div>
         <!-- TAB END-->
         </div>
@@ -105,7 +99,7 @@
         <!-- MODAL -->
         <div id="modal" style="display: none;">
         <div id="modal-content">
-            <header style="background: white;"> <h2>Header</h2> <span onclick="document.getElementById('modal').style.display='none'">&times;</span> </header>
+            <header> <h2>Header</h2> <span onclick="document.getElementById('modal').style.display='none'">&times;</span> </header>
             <div id="modal-image">
                 <!-- IMAGE --> 
             </div>
@@ -116,9 +110,6 @@
         </div>
         <!-- MODAL END -->
 
-        <footer style="max-width: 100%; background: sandybrown;">
-            sadas
-        </footer>
     </main>
 
     <script src="jquery/jquery-3.4.1.js"></script>
