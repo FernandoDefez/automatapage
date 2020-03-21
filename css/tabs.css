@@ -1,0 +1,116 @@
+#tab-buttons{
+    background: #eee;
+    border: 1px solid #bbb;
+    margin: 40px 0px 0px 0px;
+}
+
+#tab-buttons button{
+    background: #eee;
+    color: steelblue;
+    border: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 0%;
+}
+
+#tab-buttons button:focus{
+    outline: none;
+    background:  #fff;
+    color: steelblue;
+}
+
+.city{
+    background:  #fff;
+    border: 1px solid #bbb;
+    border-top: none;
+}
+
+.content{
+    width: 100%;
+    padding: 10px 30px;
+    margin: auto;
+}
+
+.content h5{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: steelblue;
+    border-bottom: 2px solid steelblue;
+    display: inline-block;
+    padding: 2px 0px;
+    margin-bottom: 10px;
+}
+
+#modal{
+    background: rgba(39, 39, 39, 0.424);
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#modal-content{
+    max-width: 870px;
+    margin: 48px auto;
+    background: white;
+}
+#modal-content .button{
+    margin: 6px 0;
+    max-width: 100%;
+}
+
+#modal-content .button button:focus{
+    outline: none;
+}
+
+#modal-content .button button{
+    background: #efefef !important;
+    color: #8a8a8a !important;
+    font-size: 15px;
+    border-radius: 3px;
+    max-width: 10%;
+    border: 1px solid #8a8a8a;
+    cursor: pointer;
+    float: right;
+}
+
+#modal-content header{
+    width: 100%;
+    display: flex;
+}
+
+#modal-content header h2{
+    width: 95%;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#modal-content header span{
+    cursor: pointer;
+    width: 5%;
+    background:  #F50057;
+    color:white;
+    text-align: center;
+    padding: 0;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+#modal-content .modal-image{
+    padding: 5px;
+}
+
+@media screen and (max-width: 850px){
+    .content{
+        padding: 10px 10px;
+    }   
+    #modal-content{
+        max-width: 550px;
+        margin: 100px auto;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Pacifico&display=swap');git 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;
+    position: relative;
+}
+
+body{
+    position: relative;
+}
+
+.col-cards{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 0;
+    margin: 5px 0 30px 0px;
+    position: relative;
+}
+
+.card{
+    width: 100%;
+    box-shadow: 1px 2px 8px #ccc;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    opacity: 0;
+}
+
+.card-body{
+    padding: 20px 20px;
+    width: 20%;
+}
+
+.img{
+    padding: 30px 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.card-text{
+    padding: 15px 50px;
+    line-height: 25px;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    width: 100%;
+    text-align: justify;
+}
+
+.title{
+    width: 100%;
+}
+
+.title h1{
+    border-bottom: 2px solid black;
+    max-width: 160px;
+    font-weight: 100;
+    margin: auto;
+    padding: 3px 0px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: "Fira Sans";
+}
+
+.card-text h2{
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 650px){
+    .card{
+        flex-direction: column;
+    }
+    .card-body{
+        width: 100%;
+    }
+    .card-text{
+        width: 100%;
+    }
+}

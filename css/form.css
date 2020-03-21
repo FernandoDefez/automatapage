@@ -1,0 +1,91 @@
+.message{
+    width: 100%;
+    margin: 0px auto;
+}
+
+form{
+    width: 30%;
+    margin: 40px auto;
+    padding: 20px 30px;
+    box-shadow: 1px 2px 8px #ccc;
+    position: relative;
+    opacity: 0;
+}
+
+@keyframes leftAnimation{
+    from{
+        left: -1000px;
+    }
+    to{
+        left: 0;
+        display: block;
+    }
+}
+
+@keyframes rightAnimation{
+    from{
+        left: 1000px;
+    }
+    to{
+        left: 0;
+        display: block;
+    }
+}
+
+form .email{
+    background: white;
+    padding: 5px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid steelblue;
+}
+
+form .email input, textarea{
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    padding: 20px 5px 5px 5px;
+    resize: none;
+}
+form textarea{
+    height: 50px;
+}
+
+form textarea:focus{
+    height: 100px;
+}
+form .email input:focus, textarea:focus{
+    outline: none;
+}
+
+.button{
+    width: 100%;
+    margin: 5px auto;
+}
+/*#F50057*/
+.button button{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background: steelblue;
+    color: white;
+    border: none;
+    margin: 5px auto;
+}
+
+.evelope{
+    width: 50%;
+    margin: auto;
+}
+
+.evelope img{
+    width: 100%;
+}
+
+@media screen and (max-width: 850px){
+    form{
+        width: 100%;
+    }
+}
