@@ -27,6 +27,7 @@
                 <p>Technological Institute of Cancun</p>
                 <div class="links">
                     <a href="#Homeworks"> Homeworks </a>
+                    <a href="#Programs"> Programs </a>
                     <a href="#Projects"> Projects </a>
                     <a href="#About"> About Me </a>
                 </div>
@@ -38,77 +39,67 @@
     <main>
 
         <!-- ABOUT ME -->
-        <div class="box">
+    <div class="box">
             <!-- TITLE -->
-            <div class="title" id="About">  <h1> Who Am I? </h1>    </div>
+        <div class="title" id="About">  <h1> Who Am I? </h1>    </div>
             <!-- CARD -->
-            <div class="col-cards">
-
-                <div class="card" id="card">
-                    <div class="card-body">
-                        <div class="img">
-                            <img src="svgs/me.svg" alt="" width="100%">
-                        </div>
-                    </div> 
-                    <div class="card-text">
-                        <h2> Fernando Defez</h2>
-                        <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carreer</p>
+        <div class="col-cards">
+            <div class="card" id="card">
+                <div class="card-body">
+                    <div class="img">
+                        <img src="svgs/me.svg" alt="" width="100%">
                     </div>
+                </div> 
+                <div class="card-text">
+                    <h2> Fernando Defez</h2>
+                    <p>My name is Fernando Pérez Defez. I am a student at college Technological Institute of Cancun. I am in the third year of my carreer</p>
                 </div>
-
             </div>
-
         </div>
+    </div>
         <!-- ABOUT ME END-->
 
         <!-- CONTENT -->
-        <div class="box" style="border-bottom: none;">
+    <div class="box" style="border-bottom: none;">
         <!-- TITLE -->
-            <div class="title" id="Homeworks"> <h1 style="max-width: 190px;">Homeworks</h1> </div>
-
-
+        <div class="title" id="Homeworks"> <h1 style="max-width: 190px;">Homeworks</h1> </div>
         <!-- TAB-->
-            <div class="tab">
-                <div class="tab-buttons" id="1stMonthBtn">
-                    <p>First Realease</p>
-                    <p>+</p>
-                </div>
-                    <div id="1stMonth" class="works" style="display: none;">
-                        <div class="content">
-                            <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Resumen';">
-                                Resumen
-                            </h5>
-                            <iframe src="documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf" width="100%" height="1060px" style="border: none;">
-                            </iframe>
-                            <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Ejercicios de Clase';">
-                                Ejercicios de Clase
-                            </h5>
-                            <iframe src="documents/FirstRelease/3EjerciciosDeAutómatas.pdf" width="100%" height="1060px" style="border: none;">
-                            </iframe>
-                        </div>
-                    </div>
+        <div class="tab">
+            <div class="tab-buttons" id="1stMonthBtn">
+                <p>First Release</p>
+                <p>+</p>
             </div>
-            
-            <div class="tab">
-                <div class="tab-buttons" id="2ndMonthBtn">
-                    <p>Second Realease</p>
-                    <p>+</p>
-                </div>
-                    <div id="2ndMonth" class="works" style="display: none;">
-                        <div class="content">
-                        <h5>Second Month</h5>
-                        <img onclick="document.getElementById('modal').style.display='block';  
-                        document.getElementById('modal-image') .innerHTML='<img src='+'Proyectos/Pulsos/Pulsos.png'+' width=100%>';" 
-                        src="Proyectos/Pulsos/Pulsos.png"width="100%">
-                        </div>
+                <div id="1stMonth" class="works" style="display: none;">
+                    <div class="content">
+                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Resumen';">
+                            Resumen
+                        </h5>
+                        <br>
+                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Ejercicios de Clase';">
+                            Ejercicios de Clase
+                        </h5>
                     </div>
+                </div>
+        </div>
+        <div class="tab">
+            <div class="tab-buttons" id="2ndMonthBtn">
+                <p>Second Release</p>
+                <p>+</p>
             </div>
+                <div id="2ndMonth" class="works" style="display: none;">
+                    <div class="content">
+                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Ejercicios de Clase';">
+                            Ejercicios de Clase
+                        </h5>
+                    </div>
+                </div>
+        </div>
         <!-- TAB END-->
     </div>
         <!-- CONTENT END-->
 
         <!-- MODAL -->
-        <div id="modal" style="display: none;">
+    <div id="modal" style="display: none;">
         <div id="modal-content" >
             <header> <h2 id="modal-header"></h2> <span onclick="document.getElementById('modal').style.display='none'">&times;</span> </header>
             <div id="modal-image">
@@ -118,10 +109,8 @@
                 <button  onclick="document.getElementById('modal').style.display='none'" >Close</button>
             </div>
         </div>
-        </div>
+    </div>
         <!-- MODAL END -->
-
-
 
     <div class="box">
         <div class="title" id="Projects" style="margin-top: 50px;"> <h1 style="max-width: 130px;">Projects</h1> </div>
