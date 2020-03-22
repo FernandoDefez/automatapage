@@ -9,11 +9,32 @@
 
 .info{
     color:  #232a34 !important;
-    font-size: 16px !important;
+    font-size: 17px !important;
 }
 
-.projects .project-title:hover{
+.projects .project-title{
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    height: 45px;
+    padding: 0;
+    width: 100%;
+}
+
+.project-title p{
     background: #ddd;
+}
+
+.project-title p, h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 43px;
+    color: steelblue;
+}
+
+.project-title h2{
+    font-weight: 200;
+    font-size: 26px;
 }
 
 .project-col{
@@ -30,6 +51,7 @@
 
 .project-img img{
     height: 100%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 650px){
