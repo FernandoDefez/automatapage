@@ -5,7 +5,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     height: 45px;
-    padding: 0 20px;
+    padding: 0 10px;
     cursor: pointer;
     width: 100%;
 }
@@ -32,6 +32,7 @@
     width: 100%;
     padding: 20px 30px;
     margin: auto;
+    background: deepskyblue;
 }
 
 .content h5{
@@ -41,6 +42,7 @@
     color: steelblue;
     border-bottom: 1px solid steelblue;
     display: inline-block;
+    width: 100%;
     padding: 2px 0px;
     margin-bottom: 15px;
 }
@@ -57,7 +59,6 @@
 }
 
 #modal-content{
-    background: deeppink;
     max-width: 60%;
     z-index: 100;
     margin: 55px auto;
@@ -150,20 +151,20 @@
 
 @media screen and (max-width: 650px){
     #modal-content{
-        height: 350px;
+        height: 250px;
     }
 
     #modal-image{
-        height: 350px;
+        height: 250px;
     }
     
     #modal-image img{
-        height: 350px;
+        height: 250px;
     }
     
     #modal-content .button button{
-        width: 20%;
-        margin-left: 78%;
+        width: 30%;
+        margin-left: 68%;
     }
 
     #modal-content header h2{

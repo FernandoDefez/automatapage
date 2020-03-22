@@ -2,15 +2,15 @@ window.addEventListener("scroll",  function () {
     const email = this.document.getElementById("email-form");
     const card = this.document.getElementById("card");
     if(this.scrollY<250){
-        card.style.animation="rightAnimation 1s ease-in";
+        card.style.animation="rightAnimation 0.5s ease-in";
         card.style.opacity="1";
     }
 });
 
 
-var _1st = $('#1stMonthBtn');   var _1stDisplay = $('#1stMonth');
-var _2nd = $('#2ndMonthBtn');   var _2ndDisplay = $('#2ndMonth');
-var _3rd = $('#3rdMonthBtn');   var _3rdDisplay = $('#3rdMonth');
+var _1st = $('#1stMonthBtn');        var _1stDisplay = $('#1stMonth'); 
+var _2nd = $('#2ndMonthBtn');     var _2ndDisplay = $('#2ndMonth');
+var _3rd = $('#3rdMonthBtn');       var _3rdDisplay = $('#3rdMonth');
 
 
 $(_1st).click(function(){ 

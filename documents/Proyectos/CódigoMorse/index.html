@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+
+    <div class="container" id="menu">
+        <div class="row my-4">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Elige una opción</h4>
+                    </div>
+                    <div class="car-body p-4">
+                        <button id="morseCodeButton" class="btn btn-dark form-control m-2" style="font-size: 16px; font-weight: 1000;"> Convertir a Código Morse </button>
+                        <button id="vocabularyButton" class="btn btn-dark form-control m-2" style="font-size: 16px; font-weight: 1000;"> Decifrar Código Morse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MORSECODE INTERFACE -->
+    <div class="container" id="morseCodeInterface">
+        <div class="row my-4">
+            <div class="col-md-6 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Convertir a código Morse</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <input type="text" class="form-control" placeholder="Introduce un texto" id="morseInput">
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success form-control" id="morseButton"> Convertir a Código Morse </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <div class="card bg-dark" id="displayVocabulary">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- VOCABULARY INTERFACE -->
+    <div class="container" id="vocabularyInterface">
+        <div class="row my-4">
+            <div class="col-md-12 m-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Decifrar Código Morse</h4>
+                    </div>
+                    <div class="card-body p-2">
+                        <div class="container py-3 bg-dark justify-content-between">
+                            <h5 class="text-light">Alfabeto</h5>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="A" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="B" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-...</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="C" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-.-.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="D" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-..</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="E" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="F" style="width: 8.8%; font-weight: 1000; font-size: 25px;">..-.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="G" style="width: 8.8%; font-weight: 1000; font-size: 25px;">--.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="H" style="width: 8.8%; font-weight: 1000; font-size: 25px;">....</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="I" style="width: 8.8%; font-weight: 1000; font-size: 25px;">..</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="J" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.---</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="K" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-.-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="L" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.-..</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="M" style="width: 8.8%; font-weight: 1000; font-size: 25px;">--</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="N" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="O" style="width: 8.8%; font-weight: 1000; font-size: 25px;">---</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="P" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.--.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="Q" style="width: 8.8%; font-weight: 1000; font-size: 25px;">--.-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="R" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.-.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="S" style="width: 8.8%; font-weight: 1000; font-size: 25px;">...</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="T" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="U" style="width: 8.8%; font-weight: 1000; font-size: 25px;">..-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="V" style="width: 8.8%; font-weight: 1000; font-size: 25px;">...-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="W" style="width: 8.8%; font-weight: 1000; font-size: 25px;">.--</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="X" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-..-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="Y" style="width: 8.8%; font-weight: 1000; font-size: 25px;">-.--</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="Z" style="width: 8.8%; font-weight: 1000; font-size: 25px;">--..</button>
+                            <br>
+                            <br>
+                            <h5 class="text-light">Números</h5>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="1" style="width: 8%; font-weight: 1000; font-size: 25px;">.----</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="2" style="width: 8%; font-weight: 1000; font-size: 25px;">..---</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="3" style="width: 8%; font-weight: 1000; font-size: 25px;">...--</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="4" style="width: 8%; font-weight: 1000; font-size: 25px;">....-</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="5" style="width: 8%; font-weight: 1000; font-size: 25px;">.....</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="6" style="width: 8%; font-weight: 1000; font-size: 25px;">-....</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="7" style="width: 8%; font-weight: 1000; font-size: 25px;">--...</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="8" style="width: 8%; font-weight: 1000; font-size: 25px;">---..</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="9" style="width: 8%; font-weight: 1000; font-size: 25px;">----.</button>
+                            <button class="btn btn-outline-success text-light m-1 p-1" id="0" style="width: 8%; font-weight: 1000; font-size: 25px;">-----</button>
+                            <button class="btn btn-outline-danger text-light m-1 p-1" id="clear" style="width: 7%; font-weight: 1000; font-size: 18px;">Clear</button>
+                        </div>
+                        <input disabled type="text" class="form-control mt-3 bg-dark text-light" style="font-weight: 1000; font-size: 25px;" id="vocabularyInput">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"> </script>
+    
+</body>
+</html>
