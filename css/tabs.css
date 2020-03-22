@@ -29,22 +29,21 @@
 }
 
 .content{
-    width: 100%;
-    padding: 20px 30px;
+    padding: 20px 10px;
     margin: auto;
-    background: deepskyblue;
 }
 
 .content h5{
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
     color: steelblue;
-    border-bottom: 1px solid steelblue;
+    border-bottom: 2px solid steelblue;
     display: inline-block;
     width: 100%;
     padding: 2px 0px;
-    margin-bottom: 15px;
+    margin: 15px auto;
+    cursor: pointer;
 }
 
 #modal{
@@ -150,16 +149,26 @@
 }
 
 @media screen and (max-width: 650px){
+
+    iframe{
+        height: 540px;
+    }
+
     #modal-content{
-        height: 250px;
+        height: 300px;
+        box-sizing: border-box;
     }
 
     #modal-image{
-        height: 250px;
+        height: 300px;
     }
     
     #modal-image img{
-        height: 250px;
+        height: 300px;
+    }
+
+    #modal-image iframe{
+        height: 300px;
     }
     
     #modal-content .button button{

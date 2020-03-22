@@ -7,17 +7,10 @@
     flex-wrap: wrap;
 }
 
-.projects .project-title{
-    width: 100%;
-    cursor: default;
-    background:  #232a34 !important;
-}
-
 .info{
-    color: white !important;
+    color:  #232a34 !important;
     font-size: 16px !important;
 }
-
 
 .projects .project-title:hover{
     background: #ddd;
@@ -31,7 +24,6 @@
 .project-img{
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
     background:  #eee;
     height: 200px;
 }
