@@ -150,20 +150,20 @@
 @media screen and (max-width: 650px){
 
     #modal-content{
-        height: 300px;
+        height: 260px;
         box-sizing: border-box;
     }
 
     #modal-image{
-        height: 300px;
+        height: 260px;
     }
     
     #modal-image img{
-        height: 300px;
+        height: 260px;
     }
 
     #modal-image iframe{
-        height: 300px;
+        height: 260px;
     }
     
     #modal-content .button button{
