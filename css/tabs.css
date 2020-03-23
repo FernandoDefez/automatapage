@@ -156,21 +156,21 @@
 @media screen and (max-width: 650px){
 
     #modal-content{
-        height: 200px;
+        height: 250px;
         box-sizing: border-box;
         margin: 130px 10px !important;
     }
 
     #modal-image{
-        height: 200px;
+        height: 250px;
     }
     
     #modal-image img{
-        height: 200px;
+        height: 250px;
     }
 
     #modal-image iframe{
-        height: 200px;
+        height: 250px;
     }
     
     #modal-content .button button{
