@@ -159,6 +159,7 @@
         height: 250px;
         box-sizing: border-box;
         margin: 90px 10px !important;
+        background: deeppink;
     }
 
     #modal-image{
