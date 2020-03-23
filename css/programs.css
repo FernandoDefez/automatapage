@@ -24,6 +24,7 @@
 .program-img img{
     cursor: pointer;
     height: 100%;
+    width:100%;
 }
 
 .program p{
