@@ -74,6 +74,7 @@
 #modal-image img{
     width: 100%;
     height: 450px;
+    background: white;
 }
 
 #modal-image iframe{
