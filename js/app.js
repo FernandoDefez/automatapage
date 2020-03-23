@@ -8,6 +8,16 @@ window.addEventListener("scroll",  function () {
 });
 
 
+function showModal(string) {
+    document.getElementById('modal-header').innerHTML= string;
+    document.getElementById('modal').style.display='block'; 
+}
+
+function hideModal(){
+    document.getElementById('modal').style.display='none';
+}
+
+
 var _1st = $('#1stMonthBtn');        var _1stDisplay = $('#1stMonth'); 
 var _2nd = $('#2ndMonthBtn');     var _2ndDisplay = $('#2ndMonth');
 var _3rd = $('#3rdMonthBtn');       var _3rdDisplay = $('#3rdMonth');

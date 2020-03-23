@@ -62,7 +62,9 @@
     <!-- CONTENT -->
     <div class="box" style="border-bottom: none;">
         <!-- TITLE -->
-        <div class="title" id="Homeworks"> <h1 style="max-width: 190px;">Homeworks</h1> </div>
+        <div class="title" id="Homeworks"> 
+            <h1 style="max-width: 190px;">Homeworks</h1> 
+        </div>
         <!-- TAB-->
         <div class="tab">
             <div class="tab-buttons" id="1stMonthBtn">
@@ -71,11 +73,11 @@
             </div>
                 <div id="1stMonth" class="works" style="display: none;">
                     <div class="content">
-                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Resumen';">
+                        <h5 onclick="document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf width=100% height=450px style=border: none;></iframe>'; showModal('Resumen');">
                             Resumen
                         </h5>
                         <br>
-                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Ejercicios de Clase';">
+                        <h5 onclick="document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>'; showModal('Ejercicios de Clase');">
                             Ejercicios de Clase
                         </h5>
                     </div>
@@ -88,7 +90,7 @@
             </div>
                 <div id="2ndMonth" class="works" style="display: none;">
                     <div class="content">
-                        <h5 onclick="document.getElementById('modal').style.display='block';  document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>';document.getElementById('modal-header').innerHTML='Ejercicios de Clase';">
+                        <h5 onclick="document.getElementById('modal-image') .innerHTML='<iframe src=documents/FirstRelease/3EjerciciosDeAutómatas.pdf width=100% height=450px style=border: none;></iframe>'; showModal('Hey');">
                             Ejercicios de Clase
                         </h5>
                     </div>
@@ -99,102 +101,95 @@
     <!-- CONTENT END-->
 
     <div class="box">
-        <div class="title" id="Programs" style="margin-top: 50px;"> <h1 style="max-width: 130px;">Programs</h1> </div>
-        <div class="programs-container">
+        <div class="title" id="Programs" style="margin-top: 50px;"> 
+            <h1 style="max-width: 130px;">Programs</h1> 
+        </div>
 
+        <div class="programs-container">
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/MordeCode.png"width="100%"
-                    onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/MordeCode.png'+' width=100%>';
-                    document.getElementById('modal-header').innerHTML='MorseCode';" >
+                    <img src="img/ProgramsImages/MorseCode.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/MorseCode.png'+' width=100%>'; showModal('Morse Code');" >
                 </div>
                 <p> Morse Code </p>
             </div>
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/Dictionary.png"width="100%"
-                    onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/Dictionary.png'+' width=100%>';
-                    document.getElementById('modal-header').innerHTML='Dictionary';">
+                    <img src="img/ProgramsImages/Dictionary.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/Dictionary.png'+' width=100%>'; showModal('Dictionary');" >
                 </div>
                 <p> Dictionary </p>
             </div>
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/SplitString.png"width="100%"
-                    onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/SplitString.png'+' width=100%>';
-                    document.getElementById('modal-header').innerHTML='Split String';">    
+                    <img src="img/ProgramsImages/SplitString.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/SplitString.png'+' width=100%>'; showModal('Split String');" >
                 </div>
                 <p> Split String </p>
             </div>
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/MordeCode.png"width="100%"
-                    onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/MordeCode.png'+' width=100%>';
-                    document.getElementById('modal-header').innerHTML='Set theory';">    
+                    <img src="img/ProgramsImages/MorseCode.png" width="100%" onclick="document.getElementById('modal-image') .innerHTML='<img src='+'img/ProgramsImages/MorseCode.png'+' width=100%>';  showModal('Morse Code');" >
                 </div>
                 <p> Set theory </p>
             </div>
         </div>
+
     </div>
 
     <!-- MODAL -->
     <div id="modal" style="display: none;">
         <div id="modal-content" >
-            <header> <h2 id="modal-header"></h2> <span onclick="document.getElementById('modal').style.display='none'">&times;</span> </header>
+            <header> <h2 id="modal-header"></h2> <span onclick="hideModal();">&times;</span> </header>
             <div id="modal-image">
                 <!-- IMAGE --> 
             </div>
             <div class="button">
-                <button  onclick="document.getElementById('modal').style.display='none'" >Close</button>
+                <button  onclick="hideModal();">Close</button>
             </div>
         </div>
     </div>
     <!-- MODAL END -->
 
     <div class="box">
-        <div class="title" id="Projects" style="margin-top: 50px;"> <h1 style="max-width: 130px;">Projects</h1> </div>
+        
+        <div class="title" id="Projects" style="margin-top: 50px;"> 
+            <h1 style="max-width: 130px;">Projects</h1> 
+        </div>
 
         <div class="projects">
+            
             <div class="project-title">
                 <h2> Pulso </h2>
             </div>
+
             <div class="project-col">
                 <div class="project-img">
-                    <img onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsoCode.png'+' width=100%>'; document.getElementById('modal-header').innerHTML='Code';"" 
-                    src="img/ProjectsImages/PulsoCode.png"width="100%">
+                    <img src="img/ProjectsImages/PulsoCode.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsoCode.png'+' width=100%>'; showModal('Pulso Code');" >
                 </div>
                 <div class="project-title">
                     <p> Code </p>
                 </div>
             </div>
+
             <div class="project-col">
                 <div class="project-img">
-                    <img onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsosSoftware.png'+' width=100%>'; document.getElementById('modal-header').innerHTML='Software';"  
-                    src="img/ProjectsImages/PulsosSoftware.png"width="100%">
+                    <img src="img/ProjectsImages/PulsosSoftware.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsosSoftware.png'+' width=100%>'; showModal('Pulso Software');" >
                 </div>
                 <div class="project-title">
                     <p> Software </p>
                 </div>
             </div>
+
             <div class="project-col">
                 <div class="project-img">
-                    <img onclick="document.getElementById('modal').style.display='block';  
-                    document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsoCode.png'+' width=100%>'; document.getElementById('modal-header').innerHTML='Hardware';" 
-                    src="img/ProjectsImages/PulsoCode.png"width="100%">
+                    <img src="img/ProjectsImages/PulsoCode.png"width="100%" onclick=" document.getElementById('modal-image') .innerHTML='<img src='+'img/ProjectsImages/PulsoCode.png'+' width=100%>'; showModal('Pulso Hardware');" >
                 </div>
                 <div class="project-title">
                     <p> Hardware </p>
                 </div>
             </div>
+
             <div class="project-title">
                 <p class="info"> Herramientas Empleadas </p>
             </div>
