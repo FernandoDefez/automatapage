@@ -14,6 +14,7 @@ function showModal(string, link) {
         console.log(link);
         document.getElementById('modal-image') .innerHTML='<iframe src='+link+'></iframe>';
     }else{
+        console.log(link);
         document.getElementById('modal-image') .innerHTML='<img src='+link+'>';
     }
 }
