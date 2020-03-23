@@ -11,7 +11,7 @@ function showModal(string, link) {
     document.getElementById('modal-header').innerHTML= string;
     document.getElementById('modal').style.display='block';
     if (link.charAt(0)=='d') {
-        document.getElementById('modal-image') .innerHTML='<iframe src=../'+link+'></iframe>';
+        document.getElementById('modal-image') .innerHTML='<iframe src='+link+'></iframe>';
     }else{
         document.getElementById('modal-image') .innerHTML='<img src='+link+'>';
     }
