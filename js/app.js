@@ -8,8 +8,8 @@ window.addEventListener("scroll",  function () {
 });
 
 // -   -   -   -   MESSAGE
-const message = document.getElementById('message');
-setInterval(() => {message.style.display="none"}, 7500);
+let message = document.getElementById('message');
+setInterval(function () {message.style.display="none"}, 7500);
 //
 
 function showModal(string, link) {
