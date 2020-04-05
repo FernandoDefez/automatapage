@@ -7,6 +7,11 @@ window.addEventListener("scroll",  function () {
     }
 });
 
+// -   -   -   -   MESSAGE
+const message = document.getElementById('message');
+setInterval(() => {message.style.display="none"}, 7500);
+//
+
 function showModal(string, link) {
     document.getElementById('modal-header').innerHTML= string;
     document.getElementById('modal').style.display='block';

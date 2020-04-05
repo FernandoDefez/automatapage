@@ -10,12 +10,20 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/programs.css">
+    <link rel="stylesheet" href="css/message.css">
 
     <link rel="shortcut icon" href="img/svgs/nodes.svg" type="image/x-icon">
     
     <title>Autómatas</title>
 </head>
 <body>
+
+    <div id="message">
+        <div class="info-image">
+            <img src="img/svgs/info.svg" alt="info">
+        </div>
+        <p>You can click the links and images to see them with more detail.</p>
+    </div>
 
     <!-- NAVEGATION -->
     <div class="box">
@@ -73,12 +81,20 @@
             </div>
                 <div id="1stMonth" class="works" style="display: none;">
                     <div class="content">
-                        <h5 onclick="showModal('Ejercicios de Clase', 'documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf');">
+                        <h5 onclick="showModal('Resumen', 'documents/FirstRelease/Tarea-Resumen-Ejercicio.pdf');">
                             Resumen
                         </h5>
                         <br>
                         <h5 onclick="showModal('Ejercicios de Clase', 'documents/FirstRelease/3EjerciciosDeAutómatas.pdf');">
                             Ejercicios de Clase
+                        </h5>
+                        <br>
+                        <h5 onclick="showModal('Expresiones Regulares', 'documents/FirstRelease/ExpresionesRegulares.pdf');">
+                            Expresiones Regulares
+                        </h5>
+                        <br>
+                        <h5 onclick="showModal('Exámanes', 'documents/FirstRelease/Exámenes.pdf');">
+                            Exámanes
                         </h5>
                     </div>
                 </div>
@@ -106,6 +122,7 @@
         </div>
 
         <div class="programs-container">
+
             <div class="program">
                 <div class="program-img">
                     <img src="img/ProgramsImages/MorseCode.png" onclick=" showModal('Morse Code', 'img/ProgramsImages/MorseCode.png');" >
@@ -115,24 +132,25 @@
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/Dictionary.png" onclick=" showModal('Morse Code', 'img/ProgramsImages/Dictionary.png');" >
+                    <img src="img/ProgramsImages/Dictionary.png" onclick=" showModal('Dictionary', 'img/ProgramsImages/Dictionary.png');" >
                 </div>
                 <p> Dictionary </p>
             </div>
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/SplitString.png" onclick=" showModal('Morse Code', 'img/ProgramsImages/SplitString.png');" >
+                    <img src="img/ProgramsImages/SplitString.png" onclick=" showModal('Split String', 'img/ProgramsImages/SplitString.png');" >
                 </div>
                 <p> Split String </p>
             </div>
 
             <div class="program">
                 <div class="program-img">
-                    <img src="img/ProgramsImages/SplitString.png" onclick=" showModal('Morse Code', 'img/ProgramsImages/SplitString.png');" >
+                    <img src="img/ProgramsImages/SetTheory.png" onclick=" showModal('Set Theory', 'img/ProgramsImages/SetTheory.png');" >
                 </div>
                 <p> Set theory </p>
             </div>
+
         </div>
 
     </div>
@@ -165,7 +183,7 @@
 
             <div class="project-col">
                 <div class="project-img">
-                    <img src="img/ProjectsImages/PulsoCode.png" onclick=" showModal('Morse Code', 'img/ProjectsImages/PulsoCode.png');" >
+                    <img src="img/ProjectsImages/PulsoCode.png" onclick=" showModal('Pulso Code', 'img/ProjectsImages/PulsoCode.png');" >
                 </div>
                 <div class="project-title">
                     <p> Code </p>
@@ -174,7 +192,7 @@
 
             <div class="project-col">
                 <div class="project-img">
-                    <img src="img/ProjectsImages/PulsosSoftware.png" onclick=" showModal('Morse Code', 'img/ProjectsImages/PulsosSoftware.png');" >
+                    <img src="img/ProjectsImages/PulsosSoftware.png" onclick=" showModal('Pulso Software', 'img/ProjectsImages/PulsosSoftware.png');" >
                 </div>
                 <div class="project-title">
                     <p> Software </p>
@@ -183,7 +201,7 @@
 
             <div class="project-col">
                 <div class="project-img">
-                    <img src="img/ProjectsImages/PulsoCode.png" onclick=" showModal('Morse Code', 'img/ProjectsImages/PulsoCode.png');" >
+                    <img src="img/ProjectsImages/pulsoHard.JPG" onclick=" showModal('Puslo Hardware', 'img/ProjectsImages/pulsoHard.JPG');" >
                 </div>
                 <div class="project-title">
                     <p> Hardware </p>
@@ -191,9 +209,48 @@
             </div>
 
             <div class="project-title">
-                <p class="info"> Herramientas Empleadas </p>
+                <p class="info"> El proyecto se realizo  </p>
             </div>
         </div>
+
+        <div class="projects">
+            
+            <div class="project-title">
+                <h2> Máquina Expendedora </h2>
+            </div>
+
+            <div class="project-col">
+                <div class="project-img">
+                    <img src="img/ProjectsImages/expendedoraSoftware.png" onclick=" showModal('Expendedora Software', 'img/ProjectsImages/expendedoraSoftware.png');" >
+                </div>
+                <div class="project-title">
+                    <p> Code </p>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <div class="project-img">
+                    <img src="img/ProjectsImages/expendedoraSoftware.png" onclick=" showModal('Expendedora Software', 'img/ProjectsImages/expendedoraSoftware.png');" >
+                </div>
+                <div class="project-title">
+                    <p> Software </p>
+                </div>
+            </div>
+
+            <div class="project-col">
+                <div class="project-img">
+                    <img src="img/ProjectsImages/expendedoraSoftware.png" onclick=" showModal('Expendedora Software', 'img/ProjectsImages/expendedoraSoftware.png');" >
+                </div>
+                <div class="project-title">
+                    <p> Hardware </p>
+                </div>
+            </div>
+
+            <div class="project-title">
+                <p class="info"> El proyecto se realizo  </p>
+            </div>
+        </div>
+
     </div>
 
     </main>

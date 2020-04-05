@@ -1,0 +1,38 @@
+#message{
+    width: 22%;
+    top: 15px;
+    right: 20px;
+    background: steelblue;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.3px 0.3px 0.5px black;
+}
+
+#message p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-align: justify;
+    font-size: 17px;
+    padding: 10px 10px;
+}
+
+.info-image{
+    width: 30%;
+    padding: 15px 7px;
+}
+
+.info-image img{
+    line-height: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 650px){
+    #message{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
