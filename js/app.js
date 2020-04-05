@@ -23,7 +23,7 @@ function showModal(string, link) {
 }
 
 function hideModal(){
-    setInterval(function() {document.getElementById('modal').style.display='none';}, 2000);
+    setInterval(function() {document.getElementById('modal').style.display='none';}, 10000);
 }
 
 var _1st = $('#1stMonthBtn');        var _1stDisplay = $('#1stMonth'); 
