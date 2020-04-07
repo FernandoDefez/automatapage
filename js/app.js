@@ -25,6 +25,7 @@ function showModal(string, link) {
 
 function hideModal(){
     document.getElementById('modal').style.display='none';
+    document.getElementById('modal-image').innerHTML='';
 }
 
 var _1st = $('#1stMonthBtn');        var _1stDisplay = $('#1stMonth'); 
