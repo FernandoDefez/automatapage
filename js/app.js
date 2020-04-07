@@ -1,5 +1,4 @@
 window.addEventListener("scroll",  function () {
-    const email = this.document.getElementById("email-form");
     const card = this.document.getElementById("card");
     if(this.scrollY<250){
         card.style.animation="rightAnimation 1s ease-in";
@@ -16,9 +15,11 @@ function showModal(string, link) {
     document.getElementById('modal-header').innerHTML= string;
     document.getElementById('modal').style.display='block';
     if (link.charAt(0)=='d') {
-        document.getElementById('modal-image') .innerHTML='<iframe src='+link+'></iframe>';
+        document.getElementById('modal-image').innerHTML='<iframe src='+link+'></iframe>';
+    }else if(link.charAt(0)=='i'){
+        document.getElementById('modal-image').innerHTML='<img src='+link+'>';
     }else{
-        document.getElementById('modal-image') .innerHTML='<img src='+link+'>';
+        document.getElementById('modal-image').innerHTML='<video width=100% controls><source src='+link+' type="video/mp4"></video>';
     }
 }
 

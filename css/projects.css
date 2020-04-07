@@ -1,69 +1,84 @@
-.projects{
+.projects-left{
     margin-bottom: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 2px 8px #ccc;
     flex-wrap: wrap;
+    background: white;
+    box-shadow: 1px 2px 8px #ccc;
 }
 
-.info{
-    color:  #232a34 !important;
-    font-size: 17px !important;
-}
-
-.projects .project-title{
-    border: 1px solid #ccc;
-    justify-content: space-between;
-    height: 45px;
-    padding: 0;
-    width: 100%;
-}
-
-.project-title p{
-    background: #ddd;
-}
-
-.project-title p, h2{
-    text-align: center;
+.projects-right{
+    margin-bottom: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    line-height: 43px;
-    color: steelblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: 1px 2px 8px #ccc;
 }
 
-.project-title h2{
-    font-weight: 200;
-    font-size: 26px;
+.project-video{
+    width: 50%;
+    padding: 10px 10px;
 }
 
-.project-col{
-    width: 33.33%;
-    box-sizing: border-box;
-}
-
-.project-img{
-    width: 100%;
-    box-sizing: border-box;
-    background:  #eee;
-    height: 200px;
-}
-
-.project-img img{
+.project-video video{
+    outline: none;
     height: 100%;
+    background: white;
+}
+
+.project-desc{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    position: relative;
+    padding: 5px;
+}
+
+.project-desc h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 26px;
+    color: steelblue;
+    margin-bottom: 10px;
+}
+
+.project-info{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.project-open{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 16px;
+    padding: 5px;
+    background: steelblue;
+    color: white;
+    border: 1px solid #ccc;
+    outline: none;
     cursor: pointer;
-    width: 100%;
-    object-fit: cover;
-    object-fit: fill;
 }
-
-.project-img img:hover{
-    object-fit: cover;
-}
-
 
 @media screen and (max-width: 650px){
-    .project-col{
+    .project-video{
         width: 100%;
+        padding: 0;
+    }
+    .project-desc{
+        width: 100%;
+        padding:15px;
+    }
+
+    .project-info{
+        font-size: 15px;
+        line-height: 25px;
+        padding: 5px;
     }
 }

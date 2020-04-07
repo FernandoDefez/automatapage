@@ -1,3 +1,8 @@
+@import 'header.css';
+@import 'message.css';
+@import 'tabs.css';
+@import 'projects.css';
+@import 'programs.css';
 /* WHO AM I? SECTION*/
 .title{
     width: 100%;
@@ -52,6 +57,7 @@
 .card-text h2{
     text-align: left;
     margin: 15px 0px;
+    color: steelblue;
 }
 
 @media screen and (max-width: 650px){
